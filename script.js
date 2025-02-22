@@ -6,6 +6,7 @@ function authenticate() {
     const validUsers = {
         "arjun": "102325",
         "admin": "1234",
+        "reshmi": "aaar85",
         "abhilash": "88525"
     };
 
