@@ -5,6 +5,7 @@ function authenticate() {
 
     const validUsers = {
         "arjun": "102325",
+        "admin": "1234",
         "abhilash": "88525"
     };
 
@@ -16,7 +17,7 @@ function authenticate() {
         document.getElementById("loading-screen").style.display = "flex";
 
         setTimeout(() => {
-            window.location.href = "https://niyamashakthiai.vercel.app";
+            window.location.href = "https://niyamashakthi-7.vercel.app";
         }, 3000);
     } else {
         status.innerHTML = "Access Denied. Incorrect credentials.";
