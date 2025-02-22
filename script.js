@@ -11,7 +11,7 @@ function authenticate() {
     };
 
     if (validUsers[username] && validUsers[username] === password) {
-        status.innerHTML = "Access Granted. Initializing J.A.R.V.I.S.";
+        status.innerHTML = "Access Granted. Initializing Niyamashakthi";
         speak("Access Granted. Welcome, " + username);
 
         // Show loading screen
