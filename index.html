@@ -3,28 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Niyamashakthi Login</title>
+    <title>NiyamaShakthi Login</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-        /* Notice Board Styling */
-        .notice {
-            margin-top: 20px;
-            padding: 10px;
+        /* Sign Up Button Styling */
+        .signup-btn {
+            display: block;
             width: 90%;
-            max-width: 400px;
-            background: rgba(255, 204, 0, 0.2);
-            color: #ffcc00;
-            border: 2px solid #ffcc00;
-            border-radius: 10px;
+            max-width: 350px;
+            margin: 20px auto;
+            padding: 12px;
+            background: #007bff;
+            color: #ffffff;
             text-align: center;
-            font-size: 14px;
-            box-shadow: 0 0 10px #ffcc00;
-            margin-left: auto;
-            margin-right: auto;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background 0.3s ease-in-out, transform 0.2s;
         }
 
-        .notice strong {
-            color: #ffffff;
+        .signup-btn:hover {
+            background: #0056b3;
+            transform: scale(1.05);
         }
     </style>
 </head>
@@ -42,6 +45,12 @@
             For those who do not have an account, use the public account:<br>
             <strong>Username:</strong> admin | <strong>Password:</strong> 1234
         </p>
+
+        <!-- Sign Up Button -->
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfkg6JvDz3l8Q53-SEBQGkg02LsnamyrP9GEq6r2bWbLwt5qg/viewform?usp=dialog" 
+           class="signup-btn" target="_blank">
+            SIGN UP
+        </a>
     </div>
 
     <!-- Overlay Effect -->
@@ -51,6 +60,11 @@
     </div>
 
     <script src="script.js"></script>
+    <script>
+        document.querySelector(".signup-btn").addEventListener("click", function() {
+            console.log("Signup button clicked");
+        });
+    </script>
 
 </body>
 </html>
