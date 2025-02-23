@@ -18,7 +18,7 @@ function authenticate() {
         document.getElementById("loading-screen").style.display = "flex";
 
         setTimeout(() => {
-            window.location.href = "https://niyamashakthi-7.vercel.app";
+            window.location.href = "https://niyamasakthi77.vercel.app";
         }, 3000);
     } else {
         status.innerHTML = "Access Denied. Incorrect credentials.";
