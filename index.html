@@ -5,6 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Niyamashakthi Login</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Notice Board Styling */
+        .notice {
+            margin-top: 20px;
+            padding: 10px;
+            width: 90%;
+            max-width: 400px;
+            background: rgba(255, 204, 0, 0.2);
+            color: #ffcc00;
+            border: 2px solid #ffcc00;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 14px;
+            box-shadow: 0 0 10px #ffcc00;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .notice strong {
+            color: #ffffff;
+        }
+    </style>
 </head>
 <body>
 
@@ -16,6 +38,10 @@
             <button onclick="authenticate()">LOGIN</button>
             <p id="status"></p>
         </div>
+        <p class="notice">
+            For those who do not have an account, use the public account:<br>
+            <strong>Username:</strong> admin | <strong>Password:</strong> 1234
+        </p>
     </div>
 
     <!-- Overlay Effect -->
@@ -25,5 +51,6 @@
     </div>
 
     <script src="script.js"></script>
+
 </body>
 </html>
